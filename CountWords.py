@@ -14,13 +14,12 @@ def count_words(s, n):
     # TODO: Sort the occurences in descending order (alphabetically in case of ties)
     word_string_count = list(set(word_string_count))
     
-    # sort=sorted(zip_l.iteritems(),key=lambda(k,v):(-v,k))
+    # sort=sorted(zip_l.iteritems(),key=lambda(k,v):(-v,k)) -removed due below is better
 
     word_string_count.sort(key=lambda tup: (-tup[1], tup[0]))
 
     # TODO: Return the top n words as a list of tuples (<word>, <count>)
     return word_string_count[:n]
-
 
 def test_run():
     """Test count_words() with some inputs."""
