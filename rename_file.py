@@ -11,7 +11,7 @@ def rename_files():
 	# part where we reneame files
 	for file_name in file_list:
 		print('old name', file_name)
-		os.rename(file_name, re.sub('[0-9]','',file_name))
+		os.rename(file_name, re.sub('[0-9]','',file_name)) # you can add othe names, for example if you want to rename file or replace filenam 
 		print('new name', file_name)
 
 rename_files()
